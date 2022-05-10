@@ -1,0 +1,731 @@
+/*Starting code for Project 3- Index w/ Media Queries*/
+img {
+  max-width:100%;
+}
+
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, blue, blue);
+  margin:0;
+  padding:0;
+}
+
+header, nav, main, footer, aside, figure, section{
+   border-radius:5px;
+   padding:3px;
+}
+
+header {
+    grid-area:header;
+    background:#FB8350;
+    text-align:center;
+}
+
+.headerpic {
+  grid-area:headerpic;
+  padding:5px;
+  
+}
+
+.headertext {
+  grid-area:headertext;
+  text-align:center;
+}
+
+.headerwrapper {
+  display:grid;
+  justify-items:center;
+  align-items:center;
+  grid-template-columns:25% auto;
+  grid-template-areas:
+  "headerpic headertext";
+}
+
+header h1 {
+     font-size:5vw;
+     color:#0A0C57;
+     font-family:Impact;
+     text-shadow: 2px 2px  #4BD3DD;
+     margin: 0;
+}
+
+header h3 {
+    font-size:2vw;
+    color:#0A0C57;
+    text-shadow: 2px 2px  #4BD3DD;
+    margin:0;
+}
+
+nav {
+    background-color:#FB8350;
+    font-size:75%;
+    grid-area:nav;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+    }
+
+nav li {
+    padding:10px 10px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration:none;
+    color:#030303;
+}
+nav a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+main {
+    grid-area:main;
+    background:#A4C4FE;
+    color:#030303;
+    padding:5px;
+    }
+
+main h2 {
+    text-align:center;
+    margin:1%;
+}
+
+main p {
+    color:#030303;
+    padding:1% 2%;
+    font-size:1em;
+}
+
+main a {
+ color:#030303;
+}
+
+main a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+.faucet{
+  width:15em;
+  height:15em;
+}
+
+.service{
+  width:10em;
+  height:10em;
+  display:block;
+  margin:auto;
+}
+
+.plumbing{
+  width:15em;
+  height:10em;
+}
+
+.heating{
+  width:15em;
+  height:10em;
+}
+
+.cooling{
+  width:15em;
+  height:10em;
+  display:block;
+  margin:auto;
+}
+
+.solar{
+  width:15em;
+  height:10em;
+  display:block;
+  margin:auto;
+}
+
+img{
+  width:10em;
+  height:7em;
+}
+
+
+.figureD{
+  grid-area:figureD;
+  background-color:#A4C4FE;
+  color:#030303;
+  padding:5px;
+}
+
+.figureD a{
+  color:#030303;
+}
+
+.figureD a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+.community{
+  width:25em;
+  height:15em;
+}
+
+.mcdonalds{
+   width:15em;
+  height:10em;
+}
+
+.figureE{
+  grid-area:figureE;
+  background-color:#A4C4FE;
+  color:#030303;
+}
+
+.figureE a{
+  color:#030303;
+}
+
+.figureE a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+.plans{
+  grid-area:plans;
+  background-color:#A4C4FE;
+  color:#030303;
+}
+
+.plans{
+  color:#030303;
+  font-size:1.25em;
+  padding:10px 0;
+}
+
+.plans a{
+  color:#030303;
+}
+
+.plans a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+
+.handyman a{
+  color:#030303;
+}
+
+.handyman a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+.handyman{
+  grid-area:handyman;
+  background-color:#A4C4FE;
+  color:#030303;
+  font-size:1.25em;
+  padding:10px 0;
+}
+
+
+
+.health{
+  grid-area:health;
+  background-color:#A4C4FE;
+  color:#030303;
+}
+
+.health{
+  color:#030303;
+  font-size:1.25em;
+  padding:10px 0;
+}
+
+.health a{
+  color:#030303;
+}
+
+.health a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+.plan{
+  width:15em;
+  height:10em;
+  display:block;
+  margin:auto;
+}
+
+.handymanpic{
+  width:15em;
+  height:10em;
+  display:block;
+  margin:auto;
+}
+
+.awards{
+  width:50em;
+  height:20em;
+}
+aside{
+  grid-area:aside;
+  background-color:#A4C4FE;
+}
+
+aside h2{
+  color:#030303;
+}
+
+aside li{
+  color:#030303;
+  font-size:1.25em;
+  padding:10px 0;
+}
+
+aside a{
+  color:#030303;
+}
+
+aside a:hover{
+  text-shadow:2px 2px  #3217ff;
+  color:white;
+}
+
+footer {
+    grid-area:footer;
+    background:#A4C4FE;
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:#030303;
+     margin:0;
+}
+
+.studypic{
+  margin:auto;
+}
+
+article{
+  background-color:#0000b0;
+  color:#FFFFFF;
+
+}
+
+article h2{
+    text-align:center;
+}
+
+.top{
+  grid-area:top;
+}
+
+.middle{
+  grid-area:middle;
+}
+
+.bottom{
+  grid-area:bottom;
+}
+
+.fig2{
+  grid-area:fig2;
+  background-color:#FFFFFF;
+}
+.fig1 {
+  grid-area:fig1;
+}
+section {
+  grid-area:section;
+}
+figure{
+  margin:0;
+  text-align:center;
+}
+
+figcaption{
+  padding:5px;
+  color:#0000b0;
+  font-weight:bold;
+}
+
+figure img{
+  margin-top:16px;
+  max-width:20em;
+  border: 2px solid #0000b0;
+}
+
+audio{
+  max-width:100%;
+}
+
+video{
+  max-width:100%;
+  height:auto;
+}
+
+.video,.audio{
+  margin:0;
+  display: grid;  /*This needs to be set or it won't center*/
+  justify-content:space-around;
+
+}
+
+form {
+    background-color:#A4C4FE;
+    width:90%;
+    margin:auto;
+    color:#030303;
+    padding:10px;
+}
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.call {
+    border-radius:5px;
+    text-align:center;
+    background-color:#0000b0;
+    width:60%;
+    padding: 5px;
+    margin:10px auto 0 auto;
+}
+ .call p{
+    color:#ffffff;
+    font-size:1.5em;
+    padding:0;
+    margin:0;
+}
+
+.button{
+  padding:5px;
+  background-color:#a4c4fe;
+  color:#0000b0;
+}
+
+
+/*---------------------------Mobile Layout----------------------------*/
+.container1 { /*index2.html*/
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas:
+    "nav"
+    "header"
+    "aside"
+    "main"
+    "figureD"
+    "figureE"
+    "footer";
+  }
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+    
+.nestedgrid2{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "div1"
+  "div2";
+}
+    
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "aside"
+    "figureD"
+    "figureE"
+    "main"
+    "footer";
+    }
+    
+.container3 { /*for service.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "figureD"
+    "plans"
+    "aside"
+    "footer";
+}
+
+.container4 { /*for aside pages*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "aside"
+    "main"
+    "footer";
+}
+
+ .container5{
+    display:grid;
+    grid-gap: .5em;
+    grid-template-colums:25% 50% auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "figureD"
+    "main"
+    "aside"
+    "handyman"
+    "health"
+    "footer";
+  }
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*index2.html*/
+    grid-template-columns: 35% auto;
+    grid-template-areas:
+    "header header"
+    "nav aside"
+    "figureD main"
+    "figureE main"
+    "footer footer";
+    }
+    
+nav{
+  position:relative;
+}
+  
+    .nestedgrid2{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "div1"
+  "div2";
+}
+    
+ .container2 { /*index2.html*/
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+  "header header"
+  "nav nav" /*Horizontal navigation on this screen*/
+  "aside figureD"
+  "aside figureE"
+  "main main"
+  "footer footer";
+  }
+
+    .container3 { /*for service.html*/
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "aside aside"
+    "figureD plans"
+    "footer footer";
+}
+
+    .container4 { /*for aside pages*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "aside aside"
+    "footer footer";
+}
+
+ .container5{
+    display:grid;
+    grid-gap: .5em;
+    grid-template-colums:25% 50% auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "figureD main main"
+    "aside handyman health"
+    "footer footer footer";
+  }
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+}
+
+/*---------------------Desktop media query----------------------------*/
+@media only screen and (min-width: 960px)   {
+     
+.container1 { /*index2.html*/
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav" /*Horizontal navigation on this screen*/
+    "figureD main aside"
+    "figureE main aside"
+    "footer footer footer";
+    }
+    
+    
+ .container2 { /*about.html*/
+  grid-template-columns: 25% auto;
+  grid-template-areas:
+  "header header header"
+  "nav nav nav" /*Horizontal navigation on this screen*/
+  "aside figureD main"
+  "aside figureE main"
+  "footer footer footer";
+  }
+  
+   .container3 { /*service.html*/
+  grid-template-columns: 25% 50% auto;
+  grid-template-areas:
+  "header header header"
+  "nav nav nav" /*Horizontal navigation on this screen*/
+  "main main main"
+  "figureD plans aside"
+  "footer footer footer";
+  }
+  
+  .container4 { /*for aside pages*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+}
+
+
+  .container5{
+    display:grid;
+    grid-gap: .5em;
+    grid-template-colums:25% 50% auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "figureD main main"
+    "aside handyman health"
+    "footer footer footer";
+  }
+  
+  
+    .container6 { /*for contact pages*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+/*This stuff is to make my navigation go horizontal on full screen*/
+.first {
+    grid-area:first;
+    margin-left:1.5em;
+}
+
+.second {
+    grid-area:second;
+}
+
+.third {
+    grid-area:third;
+}
+
+.fourth {
+    grid-area:fourth;
+}
+
+.fifth {
+    grid-area:fifth;
+}
+
+#navwrapper {
+    margin:25px;
+    display:grid;
+    grid-template-areas:
+    "first second third fourth fifth"; /*this is to make each menu option appear in one row*/
+    }
+}
